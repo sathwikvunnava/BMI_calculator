@@ -11,9 +11,9 @@ app.get("/", function (request, response) {
 app.post("/", function (request, response) {
   var n1 = Number(request.body.n1);
   var n2 = Number(request.body.n2);
-  var ans = n1 + n2;
+  var ans = n1/(n2*n2);
 
-  response.send(" The Sum of the given two numbers is " + ans);
+  response.send(" The BMI of Your Body is  " + ans);
 });
 
 app.get("/about", function (request, response) {
